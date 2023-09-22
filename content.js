@@ -1,6 +1,8 @@
 var currentTimeElement = document.createElement('div');
 currentTimeElement.id = 'current-time';
 currentTimeElement.style.position = 'fixed';
+currentTimeElement.style.width = '300px';
+currentTimeElement.style.textAlign = 'center';
 currentTimeElement.style.top = '0';
 currentTimeElement.style.right = '0';
 currentTimeElement.style.backgroundColor = '#fff';
@@ -9,7 +11,8 @@ currentTimeElement.style.zIndex = '9999';
 currentTimeElement.style.fontSize = '20px';
 currentTimeElement.style.fontWeight = 'bold';
 currentTimeElement.style.userSelect = 'none'; // 드래그 막기
-currentTimeElement.style.backgroundColor = 'rgba(255, 255, 255, 0)'; // 배경 투명하게 하기
+currentTimeElement.style.backgroundColor = 'lightgray';
+currentTimeElement.style.borderRadius = '10px';
 document.body.appendChild(currentTimeElement);
 
 // 서버 시간 가져오기
